@@ -102,4 +102,3 @@ ENV/
 
 # password
 authentication.py
-test.py
