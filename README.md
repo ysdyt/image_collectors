@@ -7,7 +7,7 @@ BingとGoogleそれぞれのパターンがありますので、所属する宗�
 それぞれの詳細は以下もご参照ください
 
 - [Bingの画像検索APIを使って画像を大量に収集する - Qiita](https://qiita.com/ysdyt/items/49e99416079546b65dfc)
-- Googleの画像検索APIを使って画像を大量に収集する - Qiita （近日公開予定）
+- [Googleの画像検索APIを使って画像を大量に収集する - Qiita](https://qiita.com/ysdyt/items/02a9e6b4e70f26385abc)
 
 ## 実行環境
 - Python3
@@ -35,7 +35,7 @@ google_se_key = 00345296485734547770:cfjdifgq18-c
 （注意！）文字列はシングルコートなどで囲わずそのまま書き込む
 
 - `bing_api_key` ・・・ Bing Image Search APIのkeyを指定します。API keyの取得方法の例は[こちら](https://qiita.com/ysdyt/items/49e99416079546b65dfc)
-- `google_api_key` ・・・ Google Custom Search APIのkeyを指定します。
+- `google_api_key` ・・・ Google Custom Search APIのkeyを指定します。API keyの取得方法の例は[こちら](https://qiita.com/ysdyt/items/02a9e6b4e70f26385abc)
 - `google_se_key` ・・・ Google Custom Engineのkeyを指定します。Google Custom Search APIを利用するには Search API用のkeyの他に、Custom Engineのkeyも必須となります。取得例は[こちら](https://qiita.com/onlyzs/items/c56fb76ce43e45c12339)
 
 
@@ -47,11 +47,11 @@ google_se_key = 00345296485734547770:cfjdifgq18-c
 ```bash
 $ python3 bing_image_collector.py
 ```
-検索クエリーや取得画像枚数などの指定方法は[こちら](https://qiita.com/ysdyt/items/49e99416079546b65dfc)を参照
+検索クエリーやパラメータなどの指定方法は[Qiita](https://qiita.com/ysdyt/items/49e99416079546b65dfc)にまとめました
 
 **Google Custom Search APIを利用する場合**
 
 ```bash
 $ python3 google_image_collector.py
 ```
-パラメータなどの指定方法はQiitaにて近日公開
+検索クエリーやパラメータなどの指定方法は[Qiita](https://qiita.com/ysdyt/items/02a9e6b4e70f26385abc)にまとめました
