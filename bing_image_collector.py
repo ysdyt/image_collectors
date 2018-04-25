@@ -85,7 +85,7 @@ if __name__ == '__main__':
 
     headers = {
         # Request headers
-        'Content-Type': 'multipart/form-data',
+        # 'Content-Type': 'multipart/form-data',
         'Ocp-Apim-Subscription-Key': bing_api_key, # API key
     }
 
@@ -118,13 +118,15 @@ if __name__ == '__main__':
             decode_res = data.decode('utf-8')
             data = json.loads(decode_res)
 
-            pattern = r"&r=(http.+)&p=" # extract an URL of image
+            # pattern = r"&r=(http.+)&p=" # extract an URL of image
 
             for values in data['value']:
                 unquoted_url = urllib.parse.unquote(values['contentUrl'])
-                img_url = re.search(pattern, unquoted_url)
-                if img_url:
-                    url_list.append(img_url.group(1))
+                # img_url = re.search(pattern, unquoted_url)
+                # if img_url:
+                #     url_list.append(img_url.group(1))
+                if unquoted_url:
+                    url_list.append(unquoted_url)
 
     for url in url_list:
         try:
