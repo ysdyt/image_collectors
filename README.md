@@ -28,9 +28,9 @@ $ touch authentication.ini
 
 ```text
 [auth]
-bing_api_key = a0fc89cbhoge4eb2hogeabhoge98dfa9173
-google_api_key = AIzahyBrhogewXWs6GglVfQmisdfaghN4-Wgffspw
-google_se_key = 00345296485734547770:cfjdifgq18-c
+bing_api_key = xxxxxxxxxxxxxxxx
+google_api_key = xxxxxxxxxxxxxxxxx
+google_se_key = xxxxxxxxxxxxx
 ```
 （注意！）文字列はシングルコートなどで囲わずそのまま書き込む
 
